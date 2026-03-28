@@ -15,6 +15,10 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=. (--key)
 5. Run project:
    npm run dev
 
+    Open browser:
+
+    http://localhost:3000
+
 ---
 
 ## System Overview
@@ -27,6 +31,13 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=. (--key)
   - portal_admin
 
 ---
+
+## Authentication Flow
+
+User registers via /register
+User logs in via /login
+System checks user role
+Redirects to appropriate dashboard
 
 ## Folder Responsibilities
 
@@ -42,5 +53,5 @@ Each team works inside:
 ## Important Rules
 
 - DO NOT change auth logic
-- DO NOT change roles
+- DO NOT change roles (patient, doctor, centre_admin, portal_admin)
 - Use existing Supabase connection
