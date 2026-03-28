@@ -9,15 +9,15 @@
 
 4. Create `.env.local` inside web-app:
 
-NEXT_PUBLIC_SUPABASE_URL= (--url)  
-NEXT_PUBLIC_SUPABASE_ANON_KEY=. (--key)
+   NEXT_PUBLIC_SUPABASE_URL= (--url)  
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=. (--key)
 
 5. Run project:
    npm run dev
 
-    Open browser:
+   Open browser:
 
-    http://localhost:3000
+   http://localhost:3000
 
 ---
 
@@ -67,15 +67,15 @@ To avoid conflicts and maintain clean code integration, follow this Git workflow
 
 # Branch Structure
 
-main                         → Final stable code
-feature/patient              → Patient team integration branch
-feature/doctor               → Doctor team integration branch
-feature/centre-admin         → Centre admin team integration branch
-feature/portal-admin         → Portal admin team integration branch
+   main                         → Final stable code
+   feature/patient              → Patient team integration branch
+   feature/doctor               → Doctor team integration branch
+   feature/centre-admin         → Centre admin team integration branch
+   feature/portal-admin         → Portal admin team integration branch
 
-feature/patient_<name>       → Individual patient member branches
-feature/doctor_<name>        → Individual doctor member branches
-...
+   feature/patient_<name>       → Individual patient member branches
+   feature/doctor_<name>        → Individual doctor member branches
+   ...
 
 
 ---
@@ -84,11 +84,11 @@ feature/doctor_<name>        → Individual doctor member branches
 
 Each member will:
 
-1. Create their own feature branch
-2. Work only on their module
-3. Create a Pull Request (PR) to their **team branch**
-4. Team branch will be tested
-5. Team branch will be merged into `main`
+   1. Create their own feature branch
+   2. Work only on their module
+   3. Create a Pull Request (PR) to their **team branch**
+   4. Team branch will be tested
+   5. Team branch will be merged into `main`
 
 ---
 
@@ -96,88 +96,88 @@ Each member will:
 
 ## 1.Get Latest Code
 
-Always start with latest updates:
+   Always start with latest updates:
 
-git checkout feature/<your-team>
-git pull origin feature/<your-team>
+   git checkout feature/<your-team>
+   git pull origin feature/<your-team>
 
 
-Example:
+   Example:
 
-git checkout feature/patient
-git pull origin feature/patient
+   git checkout feature/patient
+   git pull origin feature/patient
 
 
 ---
 
 ## 2.Create Your Personal Branch
 
-Create your own working branch from your team branch:
+   Create your own working branch from your team branch:
 
-git checkout -b feature/<team>_<yourname>
+   git checkout -b feature/<team>_<yourname>
 
 
-Example:
+   Example:
 
-git checkout -b feature/patient_nipuni
+   git checkout -b feature/patient_nipuni
 
 ---
 
 ## 3. Do Your Work
 
-* Work ONLY inside your module folder
-* Do NOT modify other team areas
-* Do NOT change authentication logic
+   * Work ONLY inside your module folder
+   * Do NOT modify other team areas
+   * Do NOT change authentication logic
 
 ---
 
 ## 4. Commit and Push
 
-git add .
-git commit -m "Added patient profile page"
-git push origin feature/<team>_<yourname>
+   git add .
+   git commit -m "Added patient profile page"
+   git push origin feature/<team>_<yourname>
 
 
 ---
 
 ## 5. Create Pull Request (PR)
 
-Create PR:
+   Create PR:
 
 
-FROM: feature/<team>_<yourname>
-TO:   feature/<team>
+   FROM: feature/<team>_<yourname>
+   TO:   feature/<team>
 
 
-Example:
+   Example:
 
 
-feature/patient_nipuni → feature/patient
+   feature/patient_nipuni → feature/patient
 
 
 ---
 
 ## 6. Team Integration
 
-* Team members review and test changes
-* Fix conflicts if any
-* Merge into team branch
+   * Team members review and test changes
+   * Fix conflicts if any
+   * Merge into team branch
 
 ---
 
 ## 7. Final Merge to Main
 
-After testing:
+   After testing:
 
-feature/<team> → main
-
-
-Example:
-
-feature/patient → main
+   feature/<team> → main
 
 
-This should be done carefully 
+   Example:
+
+   feature/patient → main
+
+
+   This should be done carefully 
 
 ---
 
