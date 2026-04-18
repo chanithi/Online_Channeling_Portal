@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import { redirect } from 'next/navigation'
 // import { createClient } from '@/lib/supabase/server'
 // import LogoutButton from '@/app/components/LogoutButton'
@@ -79,8 +78,6 @@
 // }
 
 import Link from 'next/link'
-=======
->>>>>>> 3301763 (dashboard page updated)
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import LogoutButton from '@/app/components/LogoutButton'
@@ -129,7 +126,6 @@ export default async function PatientDashboardPage() {
   )
 
   return (
-<<<<<<< HEAD
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <div className="mx-auto max-w-7xl px-6 py-8">
         
@@ -334,12 +330,6 @@ export default async function PatientDashboardPage() {
           </div>
         </div>
       </div>
-=======
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4">
-      <h1 className="text-2xl font-bold">Patient Dashboard</h1>
-      <p>Welcome, {profile.full_name}</p>
-      <LogoutButton />
->>>>>>> 3301763 (dashboard page updated)
     </div>
   )
 }
