@@ -81,6 +81,8 @@ import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import LogoutButton from '@/app/components/LogoutButton'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 
 export default async function PatientDashboardPage() {
   const supabase = await createClient()
